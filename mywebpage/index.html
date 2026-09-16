@@ -22,24 +22,6 @@
 <!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
 		
 		<style>
-			background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('background1.jpg');
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-				min-height: 480px;
-				padding-top: 70px;
-				padding-bottom: 40px;
-			}
-
-			#portfolio {
-				background-image: url('background2.jpg');
-				background-size: cover;
-				background-position: center top;
-				background-repeat: no-repeat;
-				padding-top: 40px;
-				padding-bottom: 40px;
-				min-height: 400px;
-			}
 			body, h1, h2, h3, h4, h5, h6, p, a, li, ul, i, b, hr, footer {
 				font-family: Impact, 'Arial Narrow Bold', sans-serif !important;
 				color: #ffffff !important;
@@ -88,7 +70,7 @@
 
 <!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
 
-		 
+		 <header style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('background1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding-top:70px; padding-bottom:40px;"> 
 			<div class="container"> 
 				<div class="row">
 					<div class="col-md-4">
@@ -109,6 +91,7 @@
 
 <!-- часть страницы, которая под шапкой -->
 		<section id="portfolio">
+			<header style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('background2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding-top:70px; padding-bottom:40px;"> 
 			<div class="container">
 
 <!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
