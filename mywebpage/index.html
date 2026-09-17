@@ -22,6 +22,11 @@
 <!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
 		
 		<style>
+			@keyframes rainbow {
+				0%   { background-position: 0% 50%; }
+				100% { background-position: 300% 50%; }
+			
+			}
 			body {
 				background-image: url('background2.jpg'), url('gif1.gif') ;
 				background-size: cover, cover;
@@ -85,7 +90,16 @@
 				<div class="col-md-3">
 					<article>
 						<h3><i><b>💋Место учебы💋</b></i></h3>
-						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
+						<p>Фундаментальная и прикладная лингвистика,
+							<span style="
+								background: linear-gradient(90deg, #ff69b4, #ffb347, #ffd700, #7ed957, #4fc3f7, #7a5cff, #ff69b4);
+								background-size: 300% 100%;
+								-webkit-background-clip: text;
+								background-clip: text;
+								color: transparent;
+								animation: rainbow 4s linear infinite;
+								">НИУ ВШЭ</span>
+							, Москва</p>
 					</article>
 					<article>
 						<h3><i><b>💗Родной город💗</b></i></h3>
